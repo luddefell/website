@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header>
+		<h1>About</h1>
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="about.html" aria-current="page">About</a>
+			<a href="projects.html">Projects</a>
+			<a href="resume.html">Resume</a>
+			<a href="contact.html">Contact</a>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<h2>Who I am</h2>
+			<p>I'm a Swedish Electrical & Computer Engineering student at Cornell University with a passion for bridging the gap between hardware and software systems. My academic focus centers on embedded systems, IoT development, and sustainable technology solutions.</p>
+		</section>
+		
+		<section>
+			
+			<h3>Technical Background</h3>
+			<p>I specialize in low-level programming with C/C++ and Python, with hands-on experience in circuit design using LTSpice and mechanical design through SolidWorks. My projects often combine these skills to create integrated systems that solve real-world problems.</p>
+			
+			<h3>Interests & Aspirations</h3>
+			<p>Beyond engineering, I'm deeply interested in mycology, viticulture, and sailing—interests that have influenced my approach to sustainable technology. I'm particularly drawn to renewable energy applications and hope to contribute to solutions that address environmental challenges through innovative engineering.</p>
+			<div class="sailing-photo">
+				<img src="sailing.jpg" alt="Sailing competition" loading="lazy">
+			</div>
+			<h3>Current Focus</h3>
+			<p>At Cornell, I'm exploring how embedded systems and IoT can be applied to agricultural and environmental monitoring, as demonstrated by my Smart Mushroom Tent Monitor project. I'm always looking for opportunities to combine my technical skills with my interests in sustainability and natural systems.</p>
+		</section>
+	</main>
+	<footer>
+		<small>&copy; <span id="year"></span> Ludvig Fellstrom</small>
+	</footer>
+	<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html> 
