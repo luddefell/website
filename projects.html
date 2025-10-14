@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Projects</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header>
+		<h1>Projects</h1>
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="about.html">About</a>
+			<a href="projects.html" aria-current="page">Projects</a>
+			<a href="resume.html">Resume</a>
+			<a href="contact.html">Contact</a>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<h2>Recent work</h2>
+			
+			<article class="project">
+				<h3>🧪 Smart Mushroom Tent Monitor</h3>
+				<p class="project-subtitle">ESP32-Based IoT System for Environmental Control</p>
+				
+				<p>This project is a full-stack microcontroller system developed to automate and monitor conditions inside a mushroom fruiting tent. Designed specifically for Lion's Mane and King Oyster mushrooms, it dynamically controls airflow based on real-time sensor data.</p>
+				
+				<div class="mushroom-images">
+					<figure class="project-image">
+						<img src="mushroom_setup.jpg" alt="ESP32-based IoT system mounted on a transparent mushroom grow tent with breadboard, circuit boards, and red-glowing fan" loading="lazy">
+					</figure>
+					
+					<figure class="project-image">
+						<img src="lions_mane.jpg" alt="Large cluster of Lion's Mane mushrooms growing from a cultivation bag" loading="lazy">
+					</figure>
+				</div>
+				
+				<h4>🌐 Key Features</h4>
+				<ul>
+					<li><strong>ESP32 Microcontroller</strong> — Low-power Wi‑Fi and Bluetooth-enabled chip for wireless telemetry and real-time control.</li>
+					<li><strong>Firmware Development</strong> — Custom Arduino firmware written in C++ to interface with sensors, actuators, and cloud APIs.</li>
+					<li><strong>Sensor Integration</strong> — Integrated a DHT11 sensor for humidity/temperature readings and MH‑Z19B for CO₂ measurement.</li>
+					<li><strong>OLED Display Output</strong> — Real-time feedback provided via a 0.96" I²C OLED screen.</li>
+					<li><strong>Relay-Controlled Exhaust Fan</strong> — Automated fan logic based on CO₂ levels (configurable thresholds for different mushroom species).</li>
+					<li><strong>Cloud-Based Data Logging with ThingSpeak</strong> — Periodically publishes environmental data to ThingSpeak for remote visualization and analysis.</li>
+					<li><strong>Web Dashboard with GitHub Pages</strong> — Live-updating web interface hosting data visualizations and project visuals.</li>
+				</ul>
+				
+				<h4>🔧 Technical Highlights</h4>
+				<ul>
+					<li>Embedded Systems Programming (C++ / Arduino)</li>
+					<li>Internet of Things (IoT) architecture</li>
+					<li>Real-time sensor communication via I²C and UART</li>
+					<li>Cloud API integration (ThingSpeak)</li>
+					<li>GitHub Pages static site deployment</li>
+					<li>Breadboard prototyping + serial debugging</li>
+					<li>Power management between 3.3V and 5V rails</li>
+				</ul>
+				
+				<h4>📊 CO₂ Thresholds</h4>
+				<ul>
+					<li><strong>Lion's Mane:</strong> 800–1000 PPM</li>
+					<li><strong>King Oyster:</strong> 600–800 PPM</li>
+				</ul>
+				<p>Fan logic was tuned to maintain these ranges by activating airflow as needed.</p>
+				
+				<p><strong>🌐 Live Dashboard:</strong> <a href="https://luddefell.github.io/martha-tent-monitor/" target="_blank" rel="noopener">View Real-Time Data</a></p>
+				<p><strong>📁 Source Code:</strong> <a href="https://github.com/luddefell/martha-tent-monitor" target="_blank" rel="noopener">GitHub Repository</a></p>
+			</article>
+			
+			<article class="project">
+				<h3>🔬 JSK Research Project</h3>
+				<p class="project-subtitle">Nonprofit collaboration and Python data analysis</p>
+				
+				<p>Research project conducted along South Florida's waterways in collaboration with Miami Waterkeeper and International Seakeeper Society, focusing on environmental data analysis and GIS correlation studies. This work demonstrates my ability to develop research pipelines and analyze complex environmental datasets.</p>
+				
+				<figure class="project-image">
+					<img src="JSK_Resarch Photo.png" alt="JSK Research project visualization" loading="lazy">
+				</figure>
+				
+				<h4>📋 Research Components</h4>
+				<ul>
+					<li><strong>Python Data Pipelines</strong> — Developed automated systems to parse and process government septic tank databases</li>
+					<li><strong>R Statistical Analysis</strong> — Used R programming for data correlation analysis and statistical modeling</li>
+					<li><strong>GIS Data Integration</strong> — Correlated environmental data with geographic information systems</li>
+					<li><strong>Nonprofit Collaboration</strong> — Worked with Miami Waterkeeper and International Seakeeper Society on environmental research</li>
+					<li><strong>Technical Documentation</strong> — Comprehensive research paper and presentation materials</li>
+				</ul>
+				
+				<h4>📄 Documentation</h4>
+				<ul>
+					<li><strong>Research Paper:</strong> <a href="JSK_Research.pdf" target="_blank" rel="noopener">View PDF</a></li>
+					<li><strong>Presentation:</strong> <a href="JSK_Poster.pptx" target="_blank" rel="noopener">View Presentation</a></li>
+				</ul>
+			</article>
+			
+			<!-- UPDATED: Ghost Social section with technical + marketing + features -->
+			<article class="project">
+				<h3>👥 Ghost Social — AI Engineer</h3>
+				<p class="project-subtitle">AI-Powered Event Matchmaking Platform</p>
+				
+				<p>As an AI Engineer at Ghost Social, I contributed to both the core AI systems and platform growth strategy, combining machine learning development with SEO and marketing initiatives.</p>
+				
+				<figure class="project-image">
+					<img src="ghost_social_logo.png" alt="Ghost Social logo" loading="lazy" class="logo-image">
+				</figure>
+				
+				<h4>🔧 Technical Contributions</h4>
+				<ul>
+					<li>Built platform components that transform voice‑agent profiles into pre‑event match candidates.</li>
+					<li>Improved the voice‑intake pipeline with Python‑based NLP preprocessing to enhance transcription quality.</li>
+					<li>Tuned recommendation models to improve match accuracy under real‑time event constraints.</li>
+				</ul>
+				
+				<h4>📈 SEO & Digital Marketing</h4>
+				<ul>
+					<li>Led search engine optimization (SEO) strategy and improved metadata for visibility.</li>
+					<li>Implemented digital marketing analytics to track engagement and conversions.</li>
+					<li>Forged strategic partnerships and co‑marketing collaborations with startups and community organizations.</li>
+				</ul>
+				
+				<h4>🌐 Platform Features</h4>
+				<ul>
+					<li>7‑minute conversational voice intake for rich user profiling.</li>
+					<li>AI‑powered matching engine for compatibility prediction.</li>
+					<li>Private profiles with no public directories.</li>
+					<li>Customizable match delivery and communication.</li>
+				</ul>
+				
+				<p><strong>🌐 Website:</strong> <a href="https://www.ghostsocial.ai/inquiry" target="_blank" rel="noopener">Ghost Social Platform</a></p>
+			</article>
+		</section>
+	</main>
+	<footer>
+		<small>&copy; <span id="year"></span> Ludvig Fellstrom</small>
+	</footer>
+	<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
+
