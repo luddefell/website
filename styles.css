@@ -24,9 +24,11 @@ code,pre{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;fon
 .photo-item p{margin:8px 0 0 0;color:var(--muted);font-size:0.9em}
 .project-image{margin:24px 0;text-align:center}
 .project-image img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--border);display:block;margin:0 auto;max-height:300px}
+.project-image video{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--border);display:block;margin:0 auto;max-height:300px}
 .logo-image{max-height:150px !important}
 .mushroom-images{display:flex;gap:24px;margin:24px 0;flex-wrap:wrap}
 .mushroom-images .project-image{flex:1;min-width:300px}
+.mushroom-images .project-image video{max-width:500px;max-height:300px}
 .project-image figcaption{margin-top:8px;color:var(--muted);font-size:0.9em;font-style:italic}
 .hero{text-align:center;margin:32px 0}
 .hero img{width:300px;height:300px;object-fit:cover;border-radius:50%;border:3px solid var(--border)}

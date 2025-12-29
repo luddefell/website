@@ -71,6 +71,55 @@
 			</article>
 			
 			<article class="project">
+				<h3>Automatic Door Monitor</h3>
+				<p class="project-subtitle">ECE 2300 Course Project</p>
+				
+				<p>Developed an automatic door monitoring system using a Cyclone V DE0-CV FPGA implementing a TinyRV1 single-cycle RISC-V processor. The system uses a LIDAR distance sensor and piezo buzzer to detect motion, triggering alerts when objects are detected within range. The project involved writing 60+ lines of assembly code to interface with sensors and control the audio output.</p>
+				
+				<div class="mushroom-images">
+					<figure class="project-image">
+						<img src="Screenshot 2025-12-29 at 5.04.08 PM.png" alt="ECE 2300 Lab Kit 11 with Cyclone V DE0-CV FPGA development board, breadboard, LIDAR sensor, and piezo buzzer" loading="lazy">
+					</figure>
+					
+					<figure class="project-image">
+						<video controls>
+							<source src="IMG_2891.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+					</figure>
+				</div>
+				
+				<h4>Key Features</h4>
+				<ul>
+					<li><strong>Single-Cycle RISC Processor</strong> — Implemented a TinyRV1 single-cycle RISC processor RTL in Verilog with full datapath and instruction control logic</li>
+					<li><strong>RISC-V Instruction Support</strong> — Supported 8 TinyRV1 instructions with variable instruction formats across a complete single-cycle datapath</li>
+					<li><strong>LIDAR Motion Detection</strong> — Integrated LIDAR distance sensor to detect motion and objects in the sensor's range</li>
+					<li><strong>Piezo Buzzer Alerts</strong> — Implemented audio feedback via piezo buzzer triggered by motion detection events</li>
+					<li><strong>Assembly Programming</strong> — Developed 60+ lines of assembly code to interface with sensors and control system behavior</li>
+					<li><strong>Verilog Testbenches</strong> — Developed directed and randomized Verilog testbenches and refined RTL through iterative datapath/control debugging</li>
+				</ul>
+				
+				<h4>Technical Highlights</h4>
+				<ul>
+					<li>FPGA development (Cyclone V DE0-CV)</li>
+					<li>RISC-V ISA (TinyRV1) processor design</li>
+					<li>Verilog RTL design and synthesis</li>
+					<li>Quartus Prime toolchain</li>
+					<li>Assembly language programming</li>
+					<li>Sensor integration (LIDAR distance sensor)</li>
+					<li>Hardware debugging and timing analysis</li>
+					<li>Critical-path validation</li>
+				</ul>
+				
+				<h4>Processor Implementation Details</h4>
+				<ul>
+					<li>Synthesized and deployed TinyRV1 RTL in Quartus on Cyclone V DE0-CV, validating timing by critical-path analysis</li>
+					<li>Complete datapath implementation with instruction fetch, decode, execute, memory access, and writeback stages</li>
+					<li>Full instruction control logic supporting arithmetic, logical, memory, and branch operations</li>
+				</ul>
+			</article>
+			
+			<article class="project">
 				<h3>Body Heat Harvesting for Medical Wearables</h3>
 				<p class="project-subtitle">ZT Group Research - Thermoelectric Generator Development</p>
 				
