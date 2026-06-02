@@ -184,6 +184,17 @@ ul.blog-posts li a:visited {
 	width: 1em;
 }
 
+.home-photo {
+	aspect-ratio: 1;
+	border: 1px solid var(--rule-color);
+	border-radius: 50%;
+	display: block;
+	height: 96px;
+	margin: 16px 0 0;
+	object-fit: cover;
+	width: 96px;
+}
+
 .project-teaser {
 	padding: 22px 0;
 }
