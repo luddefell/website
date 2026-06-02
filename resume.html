@@ -3,38 +3,25 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Resume</title>
-	<link rel="stylesheet" href="styles.css">
-	<style>
-		.embed {height: 80vh; width: 100%; border: 1px solid var(--border); border-radius: 6px}
-		.actions{display:flex;gap:12px;align-items:center;margin:8px 0}
-	</style>
+	<title>Resume | Ludvig Fellstrom</title>
+	<link rel="stylesheet" href="styles.css?v=7">
 </head>
 <body>
 	<header>
-		<h1>Resume</h1>
+		<h1>ludvig fellstrom</h1>
 		<nav>
-			<a href="index.html">Home</a>
-			<a href="about.html">About</a>
-			<a href="projects.html">Projects</a>
-			<a href="resume.html" aria-current="page">Resume</a>
-			<a href="contact.html">Contact</a>
+			<a href="index.html">home</a>
+			<a href="interests.html">interests</a>
+			<a href="projects.html">projects</a>
+			<a href="resume.html" aria-current="page">resume</a>
 		</nav>
 	</header>
 	<main>
 		<section>
-			<div class="actions">
-				<a href="LF_Resume.pdf" download>Download PDF</a>
-				<a href="LF_Resume.pdf" target="_blank" rel="noopener">Open in new tab</a>
-			</div>
 			<object class="embed" data="LF_Resume.pdf" type="application/pdf">
 				<p>PDF preview not supported. <a href="LF_Resume.pdf" target="_blank" rel="noopener">Open the resume</a>.</p>
 			</object>
 		</section>
 	</main>
-	<footer>
-		<small>&copy; <span id="year"></span> Ludvig Fellstrom</small>
-	</footer>
-	<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
 </html> 

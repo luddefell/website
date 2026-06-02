@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CUSail Controller App | Ludvig Fellstrom</title>
+	<link rel="stylesheet" href="styles.css?v=7">
+</head>
+<body>
+	<header>
+		<h1>ludvig fellstrom</h1>
+		<nav>
+			<a href="index.html">home</a>
+			<a href="interests.html">interests</a>
+			<a href="projects.html" aria-current="page">projects</a>
+			<a href="resume.html">resume</a>
+		</nav>
+	</header>
+	<main>
+		<article class="project">
+			<h2>cusail controller app</h2>
+			<p class="project-subtitle">Navigation subteam controller hardware and embedded tooling</p>
+			<div class="preview-grid">
+				<img src="cusail-controller-schematic.png" alt="KiCad schematic for a CUSail controller board using a Raspberry Pi Pico and switchbox connector" loading="lazy">
+				<video controls>
+					<source src="cusail-controller-demo.mov">
+					Your browser does not support the video tag.
+				</video>
+			</div>
+			<p>Worked on embedded system development for CUSail's autonomous sailboat navigation stack, connecting controller hardware to the broader sensing and actuation system used by the navigation subteam.</p>
+			<p>The controller design centers on a Raspberry Pi Pico-based board with power regulation and switchbox interfacing, supporting reliable communication between controller inputs and the sailboat's embedded navigation hardware.</p>
+			<h3>technical work</h3>
+			<ul>
+				<li>Designed controller electronics in KiCad around a Raspberry Pi Pico, USB-C power input, buck regulation, and switchbox connector routing.</li>
+				<li>Worked across embedded systems, PCB design, and navigation hardware integration.</li>
+				<li>Built toward more reliable control interfaces for autonomous sailboat testing and debugging.</li>
+			</ul>
+			<h3>links</h3>
+			<p><a href="CUSail_Navigation_Subteam_SP26_Report.pdf" target="_blank" rel="noopener">SP26 navigation subteam report</a></p>
+			<p><a href="https://github.com/CUSail-Navigation/controller-app-2" target="_blank" rel="noopener">controller app repository</a></p>
+			<p><a href="https://cusail.com/" target="_blank" rel="noopener">CUSail</a></p>
+		</article>
+	</main>
+</body>
+</html>
