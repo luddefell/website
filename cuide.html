@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CUIDE | Ludvig Fellstrom</title>
+	<link rel="stylesheet" href="styles.css?v=8">
+</head>
+<body>
+	<header>
+		<h1>ludvig fellstrom</h1>
+		<nav>
+			<a href="index.html">home</a>
+			<a href="interests.html">interests</a>
+			<a href="projects.html" aria-current="page">projects</a>
+			<a href="resume.html">resume</a>
+		</nav>
+	</header>
+	<main>
+		<article class="project">
+			<h2>CUIDE</h2>
+			<p class="project-subtitle">A SystemVerilog learning environment for university students</p>
+			<div class="preview-grid">
+				<img src="assets/images/cu-ide-logo.svg" alt="CU IDE logo with code brackets and a clock tower" width="640" height="160">
+			</div>
+			<p>Motivated by the confusion of many Cornell professors over what to do with AI, I created CU IDE!</p>
+			<p>Students write RTL in a Monaco editor, run visible tests, and submit their work to a separate hidden test harness. A chat-based AI teaching assistant can inspect their current code and offer conceptual guidance, with guardrails designed to prevent it from writing or completing the solution.</p>
+			<h3>technical work</h3>
+			<ul>
+				<li>Built a React and TypeScript interface with a Monaco editor and IBM Carbon components.</li>
+				<li>Implemented a Rust API and an Icarus Verilog grader running in Docker with network access disabled and resource limits.</li>
+				<li>Added a teaching assistant with bounded context, response validation, and checks against protected reference material.</li>
+				<li>Built instructor views for reviewing code snapshots, student interactions, and TA conversations, with on-demand student and cohort analysis backed by SQLite.</li>
+			</ul>
+			<p>This is a local prototype; classroom pilot testing and production deployment are still ahead.</p>
+			<h3>links</h3>
+			<p><a href="https://github.com/luddefell/cu-ide" target="_blank" rel="noopener">CUIDE repository</a></p>
+			<p><a href="projects.html">back to projects</a></p>
+		</article>
+	</main>
+</body>
+</html>

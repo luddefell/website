@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 160" role="img" aria-labelledby="title description">
+  <title id="title">CU IDE</title>
+  <desc id="description">Code brackets with the Cornell clock tower forming the slash beside the CU IDE wordmark.</desc>
+  <rect width="640" height="160" rx="20" fill="#b31b1b" />
+
+  <g transform="translate(42 28) scale(2.15)">
+    <path d="M18 9 5 24l13 15" fill="none" stroke="#fff9ef" stroke-linecap="round" stroke-linejoin="round" stroke-width="5" />
+    <path d="m46 9 13 15-13 15" fill="none" stroke="#fff9ef" stroke-linecap="round" stroke-linejoin="round" stroke-width="5" />
+    <g transform="rotate(13 32 24)" stroke="#21140e" stroke-linecap="round" stroke-linejoin="round">
+      <path d="m32 3-6.2 8.8h12.4Z" fill="#405668" stroke-width="1.25" />
+      <path d="M27 11.8h7.5L37 44H23.5Z" fill="#e7b875" stroke-width="1.25" />
+      <path d="m34.5 11.8h3.7L40.5 44H37Z" fill="#405668" fill-opacity=".72" stroke-width="1.25" />
+      <path d="M29.3 13.5v4.2m2.5-4.2v4.2m3-4.2v4" fill="none" stroke-width="1.15" />
+      <circle cx="31.5" cy="25" r="2.8" fill="#fff9ef" stroke-width="1.1" />
+      <path d="M31.5 25v-1.6m0 1.6 1 .7" fill="none" stroke-width=".9" />
+    </g>
+  </g>
+
+  <text x="205" y="104" fill="#fff9ef" font-family="IBM Plex Mono, SFMono-Regular, Consolas, monospace" font-size="68" font-weight="600" letter-spacing="-4">CU IDE</text>
+</svg>
