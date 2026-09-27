@@ -1,29 +1,17 @@
 :root {
+	color-scheme: dark;
 	--width: 720px;
 	--font-main: Verdana, sans-serif;
 	--font-secondary: Verdana, sans-serif;
 	--font-scale: 1em;
-	--background-color: #fff;
-	--heading-color: #222;
-	--text-color: #444;
-	--link-color: #3273dc;
+	--background-color: #01242e;
+	--heading-color: #eee;
+	--text-color: #ddd;
+	--link-color: #8cc2dd;
 	--visited-color: #8b6fcb;
-	--blockquote-color: #222;
+	--blockquote-color: #ccc;
 	--rule-color: #999;
-	--media-background: #f7f7f7;
-}
-
-@media (prefers-color-scheme: dark) {
-	:root {
-		--background-color: #01242e;
-		--heading-color: #eee;
-		--text-color: #ddd;
-		--link-color: #8cc2dd;
-		--visited-color: #8b6fcb;
-		--blockquote-color: #ccc;
-		--rule-color: #999;
-		--media-background: #06303b;
-	}
+	--media-background: #06303b;
 }
 
 * {
