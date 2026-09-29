@@ -54,7 +54,7 @@
 			<section>
 				<h3>computer vision</h3>
 				<p>I trained RTMPose to localize panel landmarks and used ArUco markers to anchor the camera view as the rig or camera position changed. Those locations defined the LED regions to inspect. CNN classifiers then determined whether each indicator was on or off from its image crop, turning a visual check into structured evidence for the firmware test.</p>
-				<p>I tuned training hyperparameters for reliable classification under changing camera and lab lighting conditions, and explored quantization to reduce the model's inference cost for edge deployment.</p>
+				<p>I tuned training hyperparameters for reliable classification under changing camera and lab lighting conditions. For edge inference, I built a static INT8 post-training quantization pipeline for RTMPose using NCNN, with KL calibration and 8-bit weights/activations (W8A8).</p>
 				<div class="ibm-visual-grid">
 					<figure>
 						<img src="assets/images/ibm-bobot-led-regions.png" alt="Power system front panel with labeled regions for green and yellow indicator LEDs" width="1280" height="720" loading="lazy">
