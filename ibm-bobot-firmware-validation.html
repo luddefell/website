@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>IBM Bobot Firmware Validation System | Ludvig Fellstrom</title>
 	<link rel="icon" type="image/png" href="assets/images/mushroom-avatar-blue.png">
-	<link rel="stylesheet" href="styles.css?v=12">
+	<link rel="stylesheet" href="styles.css?v=13">
 </head>
 <body>
 	<header>
@@ -21,8 +21,17 @@
 			<h2>ibm bobot firmware validation system</h2>
 			<p class="project-subtitle">Power Systems validation, agent tools, and developer notifications</p>
 			<p>Bobot began as an IBM watsonx challenge: give an AI assistant a way to observe and interact with physical Power systems. Working with the firmware validation team turned that idea into a broader lab problem. Four technicians were manually checking system states across roughly 30 servers, then recording test outcomes for engineering review. I worked on the physical test system and the software that made its results useful to the wider Power engineering team.</p>
-			<div class="project-image">
-				<img src="assets/images/ibm-bobot-hardware.png" alt="Robotic hardware prototype with a camera and linear positioning mechanism" loading="lazy">
+			<div class="ibm-hardware-grid">
+				<figure>
+					<img src="assets/images/ibm-bobot-hardware.png" alt="Robotic hardware prototype with a camera and linear positioning mechanism" width="764" height="518" loading="lazy">
+					<figcaption>Actuation hardware</figcaption>
+				</figure>
+				<figure>
+					<a href="assets/docs/Actuation_Schematic.pdf" target="_blank" rel="noopener" aria-label="Open full-size actuation schematic PDF">
+						<img src="assets/images/ibm-bobot-actuation-schematic.png" alt="KiCad schematic connecting Raspberry Pi GPIO to a relay and 12-volt actuator circuit" width="732" height="490" loading="lazy">
+					</a>
+					<figcaption><a href="assets/docs/Actuation_Schematic.pdf" target="_blank" rel="noopener">Actuation schematic (PDF)</a></figcaption>
+				</figure>
 			</div>
 			<h3>from physical tests to engineering results</h3>
 			<p>The Python-controlled hardware-in-the-loop platform combined robotic actuation, cameras, sensors, and Power system telemetry. It coordinated physical actions with firmware test steps, including fault injection over SSH and Telnet, so the team could observe hardware responses and investigate failures with repeatable evidence.</p>
