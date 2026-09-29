@@ -40,15 +40,15 @@
 				<p>The Python test orchestrator coordinated physical actions with Power system telemetry and firmware fault injection over SSH and Telnet. I built a Model Context Protocol (MCP) interface for watsonx Bob agent tool calling, exposing system status, available tests, test execution, and results. Test evidence flowed into IBM Engineering Test Management (ETM) on Jazz.</p>
 				<p>To keep developers informed, I deployed a DevOps notification system built from three Java/Quarkus microservices. REST APIs, message queues, and PostgreSQL moved development updates and HIL/SIL test results through the services to Slack and email. Web dashboards and ETM gave engineering teams visibility into product progress and test outcomes.</p>
 				<ol class="ibm-service-flow">
-					<li><strong>Notification Source</strong><span>Microservice collecting engineering events and test updates.</span></li>
-					<li><strong>Business Logic</strong><span>Microservice processing and routing events through the queue.</span></li>
-					<li><strong>Notification Delivery</strong><span>Microservice sending updates to Slack and email.</span></li>
+					<li><span>notification source</span><span>microservice collecting engineering events and test updates.</span></li>
+					<li><span>business logic</span><span>microservice processing and routing events through the queue.</span></li>
+					<li><span>notification delivery</span><span>microservice sending updates to Slack and email.</span></li>
 				</ol>
 				<figure class="project-image">
 					<a href="assets/images/ibm-devops-notifications.png" target="_blank" rel="noopener" aria-label="Open full-size DevOps notification system diagram">
 						<img src="assets/images/ibm-devops-notifications.png" alt="Architecture diagram showing notification sources, services, message queues, databases, and Slack and email delivery" loading="lazy">
 					</a>
-					<figcaption>Quarkus microservice architecture; the middle service is Business Logic</figcaption>
+					<figcaption>Quarkus microservice architecture; the middle service is business logic</figcaption>
 				</figure>
 			</section>
 			<section>
