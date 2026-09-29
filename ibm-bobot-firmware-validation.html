@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>IBM Bobot Firmware Validation System | Ludvig Fellstrom</title>
 	<link rel="icon" type="image/png" href="assets/images/mushroom-avatar-blue.png">
-	<link rel="stylesheet" href="styles.css?v=13">
+	<link rel="stylesheet" href="styles.css?v=14">
 </head>
 <body>
 	<header>
@@ -21,7 +21,7 @@
 			<h2>ibm bobot firmware validation system</h2>
 			<p class="project-subtitle">Power Systems validation, agent tools, and developer notifications</p>
 			<p>Bobot began as an IBM watsonx challenge: give an AI assistant a way to observe and interact with physical Power systems. Working with the firmware validation team turned that idea into a broader lab problem. Four technicians were manually checking system states across roughly 30 servers, then recording test outcomes for engineering review. I worked on the physical test system and the software that made its results useful to the wider Power engineering team.</p>
-			<div class="ibm-hardware-grid">
+			<div class="ibm-visual-grid">
 				<figure>
 					<img src="assets/images/ibm-bobot-hardware.png" alt="Robotic hardware prototype with a camera and linear positioning mechanism" width="764" height="518" loading="lazy">
 					<figcaption>Actuation hardware</figcaption>
@@ -40,6 +40,19 @@
 				<li>Built a Model Context Protocol (MCP) interface for watsonx Bob agent tool calling: check system status, list tests, run a test, and retrieve results.</li>
 				<li>Channeled test results and evidence into IBM Engineering Test Management (ETM) on Jazz, with development updates and HIL/SIL outcomes also visible through web dashboards and notifications.</li>
 			</ul>
+			<h3>computer vision detection</h3>
+			<p>I trained RTMPose to localize panel landmarks and used ArUco markers to anchor the camera view as the rig or camera position changed. Those locations defined the LED regions to inspect. CNN classifiers then determined whether each indicator was on or off from its image crop, turning a visual check into structured evidence for the firmware test.</p>
+			<p>I tuned training hyperparameters for reliable classification under changing camera and lab lighting conditions, and explored quantization to reduce the model's inference cost for edge deployment.</p>
+			<div class="ibm-visual-grid">
+				<figure>
+					<img src="assets/images/ibm-bobot-led-regions.png" alt="Power system front panel with labeled regions for green and yellow indicator LEDs" width="1280" height="720" loading="lazy">
+					<figcaption>LED regions for state detection</figcaption>
+				</figure>
+				<figure>
+					<img src="assets/images/ibm-bobot-panel-localization.png" alt="Power system panel with four predicted corner points connected by a yellow outline" width="1280" height="720" loading="lazy">
+					<figcaption>Predicted panel landmarks</figcaption>
+				</figure>
+			</div>
 			<p>To keep developers informed, I deployed a DevOps notification system built from three Java/Quarkus microservices. REST APIs, message queues, and PostgreSQL moved engineering events from internal sources through the application to Slack and email. Together with Jazz ETM and the dashboards, this gave teams visibility into Power product development and test outcomes.</p>
 			<ol class="ibm-service-flow">
 				<li><strong>Notification Source</strong><span>Collects engineering events and test updates.</span></li>

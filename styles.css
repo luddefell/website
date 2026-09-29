@@ -290,18 +290,18 @@ ul.blog-posts li a:visited {
 	max-height: 280px;
 }
 
-.ibm-hardware-grid {
+.ibm-visual-grid {
 	display: grid;
 	gap: 14px;
 	grid-template-columns: repeat(2, minmax(0, 1fr));
 	margin: 18px 0;
 }
 
-.ibm-hardware-grid figure {
+.ibm-visual-grid figure {
 	margin: 0;
 }
 
-.ibm-hardware-grid img {
+.ibm-visual-grid img {
 	background: var(--media-background);
 	border: 1px solid var(--rule-color);
 	display: block;
@@ -309,7 +309,7 @@ ul.blog-posts li a:visited {
 	width: 100%;
 }
 
-.ibm-hardware-grid figcaption {
+.ibm-visual-grid figcaption {
 	font-size: 0.9em;
 	margin-top: 6px;
 }
@@ -374,7 +374,7 @@ ul.blog-posts li a:visited {
 		grid-template-columns: 1fr;
 	}
 
-	.ibm-hardware-grid {
+	.ibm-visual-grid {
 		grid-template-columns: 1fr;
 	}
 }
