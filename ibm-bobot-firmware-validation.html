@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>IBM Bobot Firmware Validation System | Ludvig Fellstrom</title>
 	<link rel="icon" type="image/png" href="assets/images/mushroom-avatar-blue.png">
-	<link rel="stylesheet" href="styles.css?v=14">
+	<link rel="stylesheet" href="styles.css?v=15">
 </head>
 <body>
 	<header>
@@ -24,13 +24,11 @@
 			<div class="ibm-visual-grid">
 				<figure>
 					<img src="assets/images/ibm-bobot-hardware.png" alt="Robotic hardware prototype with a camera and linear positioning mechanism" width="764" height="518" loading="lazy">
-					<figcaption>Actuation hardware</figcaption>
+					<figcaption>Robotic actuation hardware</figcaption>
 				</figure>
 				<figure>
-					<a href="assets/docs/Actuation_Schematic.pdf" target="_blank" rel="noopener" aria-label="Open full-size actuation schematic PDF">
-						<img src="assets/images/ibm-bobot-actuation-schematic.png" alt="KiCad schematic connecting Raspberry Pi GPIO to a relay and 12-volt actuator circuit" width="732" height="490" loading="lazy">
-					</a>
-					<figcaption><a href="assets/docs/Actuation_Schematic.pdf" target="_blank" rel="noopener">Actuation schematic (PDF)</a></figcaption>
+					<img src="assets/images/ibm-bobot-actuation-schematic.png" alt="KiCad schematic connecting Raspberry Pi GPIO to a relay and 12-volt actuator circuit" width="732" height="490" loading="lazy">
+					<figcaption>Raspberry Pi relay actuation schematic</figcaption>
 				</figure>
 			</div>
 			<h3>from physical tests to engineering results</h3>
@@ -46,11 +44,11 @@
 			<div class="ibm-visual-grid">
 				<figure>
 					<img src="assets/images/ibm-bobot-led-regions.png" alt="Power system front panel with labeled regions for green and yellow indicator LEDs" width="1280" height="720" loading="lazy">
-					<figcaption>LED regions for state detection</figcaption>
+					<figcaption>Mapped LED regions for on/off detection</figcaption>
 				</figure>
 				<figure>
 					<img src="assets/images/ibm-bobot-panel-localization.png" alt="Power system panel with four predicted corner points connected by a yellow outline" width="1280" height="720" loading="lazy">
-					<figcaption>Predicted panel landmarks</figcaption>
+					<figcaption>RTMPose panel landmark predictions</figcaption>
 				</figure>
 			</div>
 			<p>To keep developers informed, I deployed a DevOps notification system built from three Java/Quarkus microservices. REST APIs, message queues, and PostgreSQL moved engineering events from internal sources through the application to Slack and email. Together with Jazz ETM and the dashboards, this gave teams visibility into Power product development and test outcomes.</p>
@@ -59,11 +57,12 @@
 				<li><strong>Application</strong><span>Processes and routes events through the queue.</span></li>
 				<li><strong>Notification Delivery</strong><span>Sends updates to Slack and email.</span></li>
 			</ol>
-			<div class="project-image">
+			<figure class="project-image">
 				<a href="assets/images/ibm-devops-notifications.png" target="_blank" rel="noopener" aria-label="Open full-size DevOps notification system diagram">
 					<img src="assets/images/ibm-devops-notifications.png" alt="Architecture diagram showing notification sources, services, message queues, databases, and Slack and email delivery" loading="lazy">
 				</a>
-			</div>
+				<figcaption>Quarkus notification service architecture</figcaption>
+			</figure>
 		</article>
 	</main>
 </body>

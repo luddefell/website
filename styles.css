@@ -309,7 +309,8 @@ ul.blog-posts li a:visited {
 	width: 100%;
 }
 
-.ibm-visual-grid figcaption {
+.ibm-visual-grid figcaption,
+.project-image figcaption {
 	font-size: 0.9em;
 	margin-top: 6px;
 }
