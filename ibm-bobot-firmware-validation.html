@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>IBM Bobot Firmware Validation System | Ludvig Fellstrom</title>
+	<link rel="icon" type="image/png" href="assets/images/mushroom-avatar-blue.png">
+	<link rel="stylesheet" href="styles.css?v=11">
+</head>
+<body>
+	<header>
+		<h1>ludvig fellstrom</h1>
+		<nav>
+			<a href="index.html">home</a>
+			<a href="interests.html">interests</a>
+			<a href="projects.html" aria-current="page">projects</a>
+		</nav>
+	</header>
+	<main>
+		<article class="project">
+			<h2>ibm bobot firmware validation system</h2>
+			<p class="project-subtitle">Power Systems hardware-in-the-loop testing and engineering visibility</p>
+			<p>Bobot began as an IBM watsonx challenge: give an AI assistant a way to observe and interact with physical Power systems. Working with the firmware validation team turned that idea into a broader lab problem. Four technicians were manually checking system states across roughly 30 servers, then recording test outcomes for engineering review.</p>
+			<div class="project-image">
+				<img src="assets/images/ibm-bobot-hardware.png" alt="Robotic hardware prototype with a camera and linear positioning mechanism" loading="lazy">
+			</div>
+			<h3>firmware validation</h3>
+			<p>I built a Python-controlled hardware-in-the-loop platform that combined robotic actuation, cameras, sensors, and Power system telemetry. It coordinated physical actions with firmware test steps, including fault injection over SSH and Telnet, so the team could observe hardware responses and investigate failures with repeatable evidence.</p>
+			<ul>
+				<li>Integrated camera-based status detection with robotic controls for Power system operator-panel tests.</li>
+				<li>Used watchdogs, timeouts, interlocks, and safe sequencing in the actuator and test workflow.</li>
+				<li>Channeled test results and evidence into IBM Engineering Test Management (ETM) on Jazz for validation tracking.</li>
+			</ul>
+			<h3>engineering visibility</h3>
+			<p>Alongside Bobot, I built internal tools supporting the Power product lifecycle. I deployed a DevOps notification system that kept developers informed of development updates and HIL/SIL test results. These updates and results were also surfaced through web dashboards and ETM, giving engineering teams a clearer view of development progress and test outcomes.</p>
+			<p>The notification service used Java/Quarkus microservices, REST APIs, message queues, and PostgreSQL to move engineering events from internal sources to Slack and email.</p>
+			<div class="project-image">
+				<a href="assets/images/ibm-devops-notifications.png" target="_blank" rel="noopener" aria-label="Open full-size DevOps notification system diagram">
+					<img src="assets/images/ibm-devops-notifications.png" alt="Architecture diagram showing notification sources, services, message queues, databases, and Slack and email delivery" loading="lazy">
+				</a>
+			</div>
+		</article>
+	</main>
+</body>
+</html>
