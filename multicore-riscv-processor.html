@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Multicore RISC-V Processor | Ludvig Fellstrom</title>
+	<link rel="icon" type="image/png" href="assets/images/mushroom-avatar-blue.png">
+	<link rel="stylesheet" href="styles.css?v=11">
+</head>
+<body>
+	<header>
+		<h1>ludvig fellstrom</h1>
+		<nav>
+			<a href="index.html">home</a>
+			<a href="interests.html">interests</a>
+			<a href="projects.html" aria-current="page">projects</a>
+		</nav>
+	</header>
+	<main>
+		<article class="project">
+			<h2>multicore risc-v processor</h2>
+			<div class="preview-grid">
+				<img src="assets/images/riscv-multicore-system.png" alt="Four processors with private instruction caches, a shared banked data cache, and a memory network to test memory" width="1169" height="813">
+			</div>
+			<p>an extension of the five-stage TinyRV2 core I built in <a href="https://www.csl.cornell.edu/courses/ece4750/" target="_blank" rel="noopener">ECE 4750</a> into a four-core system, written in Verilog.</p>
+			<h3>technical work</h3>
+			<ul>
+				<li>added a 2-bit branch history table that predicts branches in decode.</li>
+				<li>built a 2x2 mesh network-on-chip with XY routing and round-robin arbitration.</li>
+				<li>integrated four cores with private instruction caches and a shared banked data cache over the mesh.</li>
+				<li>verified the routers, mesh, and full four-core system with cocotb testbenches and multicore assembly tests.</li>
+			</ul>
+			<p>the base pipeline and caches come from ECE 4750 labs, written with my lab partner <a href="https://www.spencerhadlock.com/" target="_blank" rel="noopener">Spencer Hadlock</a>.</p>
+			<h3>future directions</h3>
+			<ul>
+				<li>add new layer of private L1 data caches with cache coherency network.</li>
+				<li>complete UVM testbench</li>
+				<li>novel additions, starting with measuring what small hardware assists for x86 emulation cost a RISC-V core.</li>
+			</ul>
+			<h3>links</h3>
+			<p><a href="https://github.com/luddefell/riscv-proc" target="_blank" rel="noopener">riscv-proc repository</a></p>
+			<p><a href="projects.html">back to projects</a></p>
+		</article>
+	</main>
+</body>
+</html>
